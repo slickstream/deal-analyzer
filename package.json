@@ -1,0 +1,25 @@
+{
+  "name": "deal-analyzer",
+  "version": "1.0.0",
+  "description": "A Hubspot deal analyzer",
+  "main": "dist/deal-analyzer.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "watch": "tsc -p tsconfig.json -w",
+    "test": "mocha --exit --timeout 45000 -r ts-node/register src/**/*-spec.ts"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
+    "@types/node": "^14.0.14",
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.6"
+  },
+  "dependencies": {
+    "@hubspot/api-client": "^2.0.1"
+  }
+}
