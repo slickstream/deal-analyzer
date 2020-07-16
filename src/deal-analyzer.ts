@@ -14,6 +14,7 @@ export class DealAnalyzer {
       deals: []
     };
     const dealInfo = await this.hubspotApi.crm.deals.getAll(undefined, undefined, DEAL_PROPERTIES);
+    console.log("Hubspot deal data fetched", dealInfo);
     return result;
   }
 
